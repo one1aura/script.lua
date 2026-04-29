@@ -1,0 +1,51 @@
+{
+  "name": "Script",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Script name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of what the script does"
+    },
+    "code": {
+      "type": "string",
+      "description": "The Lua source code"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Preview image URL for the script"
+    },
+    "key_type": {
+      "type": "string",
+      "enum": [
+        "keyless",
+        "key",
+        "universal"
+      ],
+      "default": "keyless",
+      "description": "Key requirement type"
+    },
+    "game": {
+      "type": "string",
+      "description": "The Roblox game this exploit is for (e.g. Blox Fruits, Da Hood)"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "terminal",
+        "other"
+      ],
+      "default": "other",
+      "description": "Script category \u2014 terminal = terminal-only scripts"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "patched",
+        "testing"
+      ],
+ 
